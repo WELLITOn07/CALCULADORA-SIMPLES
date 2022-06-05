@@ -19,6 +19,7 @@ body {
     box-sizing: border-box;
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(40, 65, 66);
 }
 /*H1*/
 h1 {

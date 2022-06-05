@@ -49,25 +49,25 @@ addEventListener("click", function (ev) {
     }
     if (texto === "+") {
         conta = "+"
-        tela.innerHTML += texto; 
+        tela.innerHTML += `<font color="darkslategray">${" " + texto + " " }</font>`; 
         n2 = Number(n1)
         n1 = ""
     }
     if (texto === "-") {
         conta = "-"
-        tela.innerHTML += texto;
+        tela.innerHTML += `<font color="darkslategray">${" " + texto + " " }</font>`;
         n2 = Number(n1)
         n1 = "" 
     }
     if (texto === "x") {
         conta = "x"
-        tela.innerHTML += texto;
+        tela.innerHTML += `<font color="darkslategray">${" " + texto + " " }</font>`;
         n2 = Number(n1)
         n1 = "" 
     }
     if (texto === "/") {
         conta = "/"
-        tela.innerHTML += texto;
+        tela.innerHTML += `<font color="darkslategray">${" " + texto + " " }</font>`;
         n2 = Number(n1)
         n1 = "" 
     }
