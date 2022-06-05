@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/*IMPORT*/
+
+/*ROOT*/
+
+/*RESET*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a, abbr {
+    text-decoration: none;
+}
+a {
+    color: aliceblue;
+}
+/*BODY*/
+body {
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*H1*/
+h1 {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    height: 50px;
+    margin: auto; 
+    text-align: center;
+    background-color: cadetblue;
+    color: aliceblue;
+    padding-top: 15px;
+    font-size: 3rem;
+    border-radius: 10px 10px 0px 0px;
+}
+p#resultado {
+    background-color: aliceblue;
+    width: auto;
+    height: auto;
+    font-size: 3em;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 2px inset  cadetblue;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+p.botoes {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+/*INPUTS*/
+div.inputs {
+    max-width: 480px;
+    margin: auto;
+    background-color: aqua;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: cadetblue;
+    padding: 10px;
+}
+/*BUTTONS*/
+button {
+    width: 80px;
+    padding: 5px;
+    font-size: x-large;
+    margin: 3px;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: cadetblue;
+    color: aliceblue;
+    cursor: pointer;
+}
+p.reset {
+    display: flex;
+    justify-content: center;
+}
+button.reset {
+    width: 85%;
+}
+button.igual {
+    background-color: rgba(150, 215, 218, 0.952);
+}
+button.reset:hover {
+    background-color: rgba(231, 62, 62, 0.473);
+}
+button.igual:hover {
+    background-color: cadetblue;
+    cursor: help;
+}
+/*FOOTER*/
+footer {
+    background-color: darkcyan;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    font-size: medium;
+}
+footer > p {
+    padding: 5px;
+    color: aliceblue;
+}
+a {
+    font-size: larger;
+}
+a:hover {
+    color: rgba(150, 215, 218, 0.952);
+    font-weight: 500;
+    cursor: pointer;
+}
+span {
+    padding-left: 30px;
+}
+@media (max-width: 400px) {
+    p#resultado {
+        font-size: 1.5em;
+    }
+}
+
