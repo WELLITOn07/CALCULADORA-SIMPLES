@@ -93,7 +93,7 @@ addEventListener("click", function (ev) {
             };
         } else if (conta === "/") {
             res =  n2 / Number(n1);
-            if (res == Number.POSITIVE_INFINITY) {
+            if (res == Number.POSITIVE_INFINITY || Number.NEGATIVE_INFINITY) {
                 res = 0;
             }
             tela.innerHTML = res;  
