@@ -65,10 +65,10 @@ div.inputs {
 /*BUTTONS*/
 button {
     width: 80px;
-    padding: 5px;
+    padding: 10px;
     font-size: x-large;
-    margin: 3px;
-    border-radius: 5px;
+    margin: 5px;
+    border-radius: 15px;
 }
 button:hover {
     background-color: cadetblue;
