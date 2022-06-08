@@ -88,36 +88,54 @@ addEventListener("click", function (ev) {
         n1 += texto;
     }
     if (texto === "+") {
-        conta = "+"
+        conta += "+"
+        if (conta.length > 1) {
+            this.window.alert('Proibido usar dois operadores, click em RESET')
+            return;
+        }
         tela.innerHTML += `<font color="darkslategray">${" " + texto + " " }</font>`; 
         n2 = Number(n1)
         n1 = ""
     }
     if (texto === "-") {
-        conta = "-"
+        conta += "-"
+        if (conta.length > 1) {
+            this.window.alert('Proibido usar dois operadores, click em RESET')
+            return;
+        }
         tela.innerHTML += `<font color="darkslategray">${" " + texto + " " }</font>`;
         n2 = Number(n1)
         n1 = "" 
     }
     if (texto === "x") {
-        conta = "x"
+        conta += "x"
+        if (conta.length > 1) {
+            this.window.alert('Proibido usar dois operadores, click em RESET')
+            return;
+        }
         tela.innerHTML += `<font color="darkslategray">${" " + texto + " " }</font>`;
         n2 = Number(n1)
         n1 = "" 
     }
     if (texto === "/") {
-        conta = "/"
+        conta += "/"
+        if (conta.length > 1) {
+            this.window.alert('Proibido usar dois operadores, click em RESET')
+            return;
+        }
         tela.innerHTML += `<font color="darkslategray">${" " + texto + " " }</font>`;
         n2 = Number(n1)
         n1 = "" 
     }
     if (texto === "=") {
         tela.setAttribute('class', 'reset')
+        tela.innerHTML = "";
         if (conta === "+") {
             res = Number(n1) + n2;
             tela.innerHTML = res;
             n1 = "";
             n2 = "";
+            conta = "";
             res = 0;
         } else if (conta === "-") {
             if (n1 > n2) {
@@ -125,12 +143,14 @@ addEventListener("click", function (ev) {
                 tela.innerHTML = res;
                 n1 = "";
                 n2 = "";
+                conta = "";
                 res = 0;
             } else {
                 res = n2 - Number(n1);
                 tela.innerHTML = res;
                 n1 = "";
                 n2 = "";
+                conta = "";
                 res = 0;
             };
         } else if (conta === "x") {
@@ -139,12 +159,14 @@ addEventListener("click", function (ev) {
                 tela.innerHTML = res;
                 n1 = "";
                 n2 = "";
+                conta = "";
                 res = 0;
             } else {
                 res = n2 * Number(n1);
                 tela.innerHTML = res;
                 n1 = "";
                 n2 = "";
+                conta = "";
                 res = 0;
             };
         } else if (conta === "/") {
@@ -155,6 +177,7 @@ addEventListener("click", function (ev) {
             tela.innerHTML = res;
             n1 = "";
             n2 = "";
+            conta = "";
             res = 0;  
         }
     };
