@@ -7,10 +7,6 @@ addEventListener("click", function (ev) {
 
     const evento = ev.target;
     let texto = evento.innerText;
-    if (tela.classList.contains('reset')) {
-        tela.innerHTML = "";
-        tela.classList.remove('reset')
-    }
     if (texto === "1") {
         tela.innerHTML += texto;
         n1 = texto;
@@ -76,38 +72,31 @@ addEventListener("click", function (ev) {
         n1 = "" 
     }
     if (texto === "=") {
-        tela.setAttribute('class', 'reset')
         if (conta === "+") {
             res = Number(n1) + n2;
             tela.innerHTML = res;
-            res = 0;
         } else if (conta === "-") {
             if (n1 > n2) {
                 res = Number(n1) - n2;
                 tela.innerHTML = res;
-                res = 0;
             } else {
                 res = n2 - Number(n1);
                 tela.innerHTML = res;
-                res = 0;
             };
         } else if (conta === "x") {
             if (n1 > n2) {
                 res = Number(n1) * n2;
                 tela.innerHTML = res;
-                res = 0;
             } else {
                 res = n2 * Number(n1);
                 tela.innerHTML = res;
-                res = 0;
             };
         } else if (conta === "/") {
             res =  n2 / Number(n1);
             if (res == Infinity) {
                 res = 0;
             }
-            tela.innerHTML = res;
-            res = 0;  
+            tela.innerHTML = res;  
         }
     };
     /*RESET*/
